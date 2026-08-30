@@ -9,12 +9,9 @@ class Solution:
         fast = head
         slow = head
 
-        index = 0
-
         while(fast and fast.next):
             slow = slow.next
             fast = fast.next.next
-            index+=1
 
             if(slow == fast):
                 slow = head
