@@ -19,6 +19,7 @@ class Solution:
         begin_of_second = slow.next
         slow.next = None
 
+        # đảo ngược list 2
         prev = None
         curr = begin_of_second
 
@@ -29,7 +30,8 @@ class Solution:
             curr = next_node
 
         head2 = prev
-
+        
+        # đan xen
         while head2:
             tmp1 = head.next
             tmp2 = head2.next
