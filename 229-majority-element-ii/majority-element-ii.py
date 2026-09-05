@@ -8,6 +8,7 @@ class Solution:
                 hash_table[i] = 1
             else:
                 hash_table[i]+=1
+                
         
         res = []
         for key, value in hash_table.items():
