@@ -24,14 +24,12 @@ public:
          int row = matrix.size();
         int col = matrix[0].size();
         
-        // Coi ma trận là mảng 1D có chỉ số từ 0 đến (row * col - 1)
         int left = 0;
         int right = row * col - 1;
         
         while (left <= right) {
             int mid = left + (right - left) / 2;
             
-            // Quy đổi chỉ số mid 1D thành tọa độ [i][j] trong 2D
             int mid_val = matrix[mid / col][mid % col];
             
             if (mid_val == target) {
